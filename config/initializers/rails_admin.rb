@@ -12,20 +12,14 @@ RailsAdmin.config do |config|
       index                         # mandatory
       new
       export
-      history_index
       bulk_delete
     # member actions
       show
       edit
       delete
-      history_show
-      show_in_app
-
       publish do
         only 'Blog::Post'
         link_icon 'icon-check'
       end
-
-      
   end
 end
